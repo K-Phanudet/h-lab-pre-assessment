@@ -1,4 +1,4 @@
-# h-lab-pre-assessment
+# H-Lab pre-assessment
 
 ## Backend Question
 #### 1 Assuming the system currently has three microservices: Customer API, Master Data API,and Transaction Data API, there is a new feature that requires data from all three microservices to be displayed in near real-time. The current technology stack includesREST APIs and an RDBMS database. How would you design a new API for this feature?
@@ -32,20 +32,32 @@ From above diagram:
 
 #### 2 Assuming the team has started planning a new project, the project manager asks you for a performance test strategy plan for this release. How would you recommend proceeding to the project manager?
 
+**Step 1:** Asking for requirements, Clarify the performance goals, such as the expected number of users (load) and acceptable response time. Define the test scope, identifying which parts need testing and potential bottlenecks.
+
+**Step 2:** Define performance testing approach and Choose Testing tool
+
+**Step 3:** Define acceptable Criteria
+
+**Step 4:** Execute tests and report result
+
+**Step 5:** Monitor
+
 
 ----
 
 #### 3 Design and develop two APIs using NestJS and Postgres with the following
-specifications:
+**Specifications:**
 - Create a Multilingual Product API: Develop an API that allows for the creation
 of products, each with attributes for name and description that support multiple
 languages.
 - Multilingual Product Search API: Implement an API that enables searching for
 products by name in any language and returns results in a paginated format.
 
-Additional Requirements:
+**Additional Requirements:**
 - Validation: Outline how you will validate data inputs in both APIs to ensure data
 integrity.
+
+> I'm using NestJS validation to ensure that name and description are strings because strings support multiple languages. However, I’m not validating symbols since we need to allow multilingual input, and filtering out symbols might cause issues with some languages.
 
 - Database Design: Describe the database schema and the approach you will use to
 handle multilingual support for product information.
