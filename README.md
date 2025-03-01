@@ -97,3 +97,14 @@ You can also run various tests to ensure the APIs are functioning correctly:
 
 **Integration Tests:** 
 > `npm run test:repository`
+
+
+-------
+
+#### useCallback ใช้ทําอะไร
+
+>useCallback is a React Hook that memoizes a function to prevent unnecessary re-creation during re-renders. If any of the dependencies in the dependency array change, the function will be recreated.
+
+#### Write a unit test for the UserProfile React component using Jest and React Testing Library.
+You'll find the test in 
+`user-profile.test.js`
